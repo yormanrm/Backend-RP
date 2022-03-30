@@ -127,6 +127,7 @@ CREATE TABLE `filesbusiness` (
   PRIMARY KEY (`filebusiness_id`)
 
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `cartitemscustomers` (
   cartitem_id int(11) NOT NULL AUTO_INCREMENT,
   cust_id int(11),
@@ -134,12 +135,13 @@ CREATE TABLE `cartitemscustomers` (
   seller_id int(11),
   quantity int(11),
   ordercart VARCHAR(20),
-  order_id int(11)
+  order_id int(11),
 
 
   PRIMARY KEY (`cartitem_id`)
 
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `cartitemsvendors` (
   cartitem_id int(11) NOT NULL AUTO_INCREMENT,
   vendor_id int(11),
@@ -147,12 +149,13 @@ CREATE TABLE `cartitemsvendors` (
   seller_id int(11),
   quantity int(11),
   ordercart VARCHAR(20),
-  order_id int(11)
+  order_id int(11),
 
 
   PRIMARY KEY (`cartitem_id`)
 
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `orderscustomers` (
   order_id int(11) NOT NULL AUTO_INCREMENT,
   payorder VARCHAR(50),
